@@ -29,12 +29,7 @@
     <!-- CSS Files -->
     <link href="../assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
-        </script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
-        </script>
+    
 </head>
 
 <body>
@@ -148,15 +143,15 @@
                             </a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="../kpi/danhsachKPI.html">
-                                <i class="nav-icon fas fa-chart-line"></i> Thiết lập KPI
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link  " href="../marketing/report.html">
-                                  <i class="nav-icon fas fa-copy"></i> Báo cáo công việc
+                                <a class="nav-link" href="../kpi/danhsachKPI.html">
+                                  <i class="nav-icon fas fa-chart-line"></i> Thiết lập KPI
                                 </a>
                               </li>
+                              <li class="nav-item">
+                                  <a class="nav-link  " href="../marketing/report.html">
+                                    <i class="nav-icon fas fa-copy"></i> Báo cáo công việc
+                                  </a>
+                                </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../marketing/profile.html">
                                 <i class="ni ni-single-02 text-yellow"></i> Profile
@@ -233,12 +228,22 @@
             <div class="container-fluid mt--5">
                 <div class="card bg-secondary shadow">
                     <div class="card-header bg-white border-0">
-                        <div class="row align-items-center">                    
-                            <div class="col-12">                                   
-                                 <a href="danhsachKPI.html" style="margin-left: 0; display: inline-block;">
-                                        <i class="fas fa-arrow-left"></i>
-                                </a>
-                                <h2 style="text-align: center;">THIẾT LẬP KPI CẤP BỘ PHẬN</h2>
+                        <div class="row align-items-center"> 
+                                <div class="col-5">
+                                        <div class="text-left">
+                                            <a href="danhsachKPI.html">
+                                            <button class="btn btn-icon btn-3 btn-primary" type="button">
+                                                <span class="btn-inner--icon"><i class="fa fa-undo"></i></span>
+                                                <span class="btn-inner--text">Quay lại</span>          
+                                            </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                     <h2 style="text-align:left;">Thiết lập KPI cấp bộ phận</h2>
+                                    </div>
+                                  </div>                   
+                            <div class="card-body">                                   
                                 <div style="height: 1rem"></div>
                                 <div class="row">
                                     <div class="col-md-5">
@@ -339,7 +344,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-4 offset-md-8 ">
-                                                <button class="btn btn-primary"> Lưu</button>
+                                                <button id="Save" class="btn btn-primary"> Lưu</button>
                                             </div>
                                         </div>
 
@@ -503,8 +508,14 @@
                     token: "ee6fab19c5a04ac1a32a645abde4613a",
                     application: "argon-dashboard-free"
                 });
-        </script>
 
+        </script>
+<script>
+        $( "#Save" ).click(function() {
+          if (window.confirm('Bạn có muốn lưu KPI?')) {
+            window.location = "./thietlapKPIcapnhanvien.html";}
+        });
+      </script>
 </body>
 
 </html>
