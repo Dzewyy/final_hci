@@ -1668,12 +1668,12 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid #e9ecef;
+  border: 1.5px solid #d3d1d1;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #e9ecef;
+  border: 1.5px solid #cfcfcf;
 }
 
 .table-bordered thead th,
@@ -1997,7 +1997,8 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(2.75rem + 2px);
+  height: fit-content;
+  margin: 0.2rem;
   padding: 0.625rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -18433,11 +18434,11 @@ textarea[resize="horizontal"] {
   margin-bottom: 0;
 }
 
-.card .table td,
+/* .card .table td,
 .card .table th {
   padding-left: 1.5rem;
   padding-right: 0rem;
-}
+} */
 
 p {
   font-size: 1rem;

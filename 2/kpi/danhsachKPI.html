@@ -245,7 +245,7 @@
                     </div>
                     <div class="col-sm-2 col-sm-2">
                         <div style="text-align: center; font-size: 0.8rem;">Phòng ban</div>
-                        <div class="dropdown">
+                        <!-- <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="phongban"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Bộ phận sản xuất
@@ -256,20 +256,24 @@
                                 <a class="dropdown-item" href="#">Bộ phận kinh doanh</a>
                                 <a class="dropdown-item" href="#">Bộ phận hành chính</a>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
+                          <div >
+                            <select name="bophan" class="form-control">
+                              <option value="kinhdoanh"> Bộ phận kinh doanh</option>
+                              <option value="sanxuat">Bộ phận sản xuất</option>
+                              <option value="ketoan">Bộ phận kế toán</option>
+                              <option value="kiemdinh">Bộ phận kiểm định</option>
+                              <option value="nhansu">Bộ phận nhân sự</option>
+                            </select>
+                          </div>
+                      </div>
                     <div class="col-sm-1">
                         <div style="text-align: center; font-size: 0.8rem;">Vai trò</div>
-                        <div style="vertical-align: middle; text-align: center;" class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Vai trò
-                            </a>
-
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Nhân viên</a>
-                                <a class="dropdown-item" href="#">Bộ phận</a>
-                            </div>
+                        <div >
+                          <select name="vaitro" class="form-control">
+                            <option value="true">Nhân viên</option>
+                            <option value="false">Quản lý</option>
+                          </select>
                         </div>
                     </div>
                     <div class="col-sm-2 col-sm-2">
@@ -279,12 +283,22 @@
                         </div>
                     </div>
                     <div class="col-sm-2" style="position: relative;">
-                        <button class="btn btn-primary" style="position: absolute; bottom: 0; float: right; font-size: 0.8rem;">Xem danh sách</button>
-                        <button class="btn btn-light" style="position: absolute; bottom: 0; margin-left: 9rem; font-size: 0.8rem;">
+                        <button class="btn btn-primary" style="position: absolute; bottom: 0.25rem; float: right; font-size: 0.8rem;">Xem danh sách</button>
+                        <!-- <button class="btn btn-light" style="position: absolute; bottom: 0.25rem; margin-left: 9rem; font-size: 0.8rem;">
                          <a href="./thietlapKPIcapnhanvien.html">
-                          Thêm KPI
+                          Thêm KPI cấp nhân viên
                          </a> 
-                        </button>
+                        </button> -->
+                        <div class="dropdown" style="position: absolute; bottom: 0.25rem; margin-left: 9rem; font-size: 0.8rem;">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Dropdown button
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
                     </div>
                   </div>
               </div>
