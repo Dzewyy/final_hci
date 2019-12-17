@@ -28,13 +28,13 @@
 <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
 <!-- CSS Files -->
 <link href="../assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
-    <!-- Font Awesome JS -->
+    <!-- Font Awesome JS
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
     </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -145,6 +145,11 @@
                   </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link  " href="../marketing/report.html">
+                      <i class="nav-icon fas fa-copy"></i> Báo cáo công việc
+                    </a>
+                  </li>
+                <li class="nav-item">
                   <a class="nav-link" href="../marketing/profile.html">
                     <i class="ni ni-single-02 text-yellow"></i> Profile
                   </a>
@@ -231,13 +236,13 @@
                             <input type="text" class="form-control" placeholder="1000">
                         </div>
                     </div>
-                    <div class="col-sm-1">
+                    <div class="col-sm-2">
                         <div style="text-align: center; font-size: 0.8rem;">Từ ngày</div>
                         <div style="vertical-align: middle; text-align: center;">
                             <input type="text" class="form-control" placeholder="05/10/2019">
                         </div>
                     </div>
-                    <div class="col-sm-1">
+                    <div class="col-sm-2">
                         <div style="text-align: center; font-size: 0.8rem;">Đến ngày</div>
                         <div style="vertical-align: middle; text-align: center;">
                             <input type="text" class="form-control" placeholder="05/11/2019">
@@ -267,15 +272,7 @@
                             </select>
                           </div>
                       </div>
-                    <div class="col-sm-1">
-                        <div style="text-align: center; font-size: 0.8rem;">Vai trò</div>
-                        <div >
-                          <select name="vaitro" class="form-control">
-                            <option value="true">Nhân viên</option>
-                            <option value="false">Quản lý</option>
-                          </select>
-                        </div>
-                    </div>
+                  
                     <div class="col-sm-2 col-sm-2">
                         <div style="text-align: center; font-size: 0.8rem;">Người thực hiện</div>
                         <div style="vertical-align: middle; text-align: center; ">
@@ -286,17 +283,16 @@
                         <button class="btn btn-primary" style="position: absolute; bottom: 0.25rem; float: right; font-size: 0.8rem;">Xem danh sách</button>
                         <!-- <button class="btn btn-light" style="position: absolute; bottom: 0.25rem; margin-left: 9rem; font-size: 0.8rem;">
                          <a href="./thietlapKPIcapnhanvien.html">
-                          Thêm KPI cấp nhân viên
+                          Thêm KPI
                          </a> 
                         </button> -->
                         <div class="dropdown" style="position: absolute; bottom: 0.25rem; margin-left: 9rem; font-size: 0.8rem;">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Dropdown button
+                              Thêm KPI
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
+                              <a class="dropdown-item" href="./thietlapKPIcapnhanvien.html">Cấp nhân viên</a>
+                              <a class="dropdown-item" href="./thietlapkpicapbophan.html">Cấp bộ phận</a>
                             </div>
                           </div>
                     </div>
@@ -432,7 +428,7 @@
     </div>
   <!-- Footer -->
   <footer class="footer">
-    <div class="row align-items-center justify-content-xl-between">
+    <div style="padding: 0.5rem;" class="row align-items-center justify-content-xl-between">
       <div class="col-xl-6">
         <div class="copyright text-center text-xl-left text-muted">
           &copy; 2019 <a href="#" class="font-weight-bold ml-1">HCI_09</a>
@@ -458,160 +454,18 @@
   </footer>
 </div>
 </div>
-            <!-- <div class="main-content row header-row">
-                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
-                    <span class="name-page">
-                        <button class="btn btn-link page-before">Thiết lập KPI</button>
-                        <i class="fa fa-angle-right"></i>
-                        <button class="btn btn-link page-current">Danh sách KPI</button>
-                    </span>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="form-group has-search">
-                        <span class="fa fa-search form-control-feedback"></span>
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                </div>
-            </div>
-            <hr width="100%" />
-
-            <div>
-                <div class="row filter">
-                    <div class="col-sm-1">
-                        <div style="text-align: center;">Chỉ tiêu</div>
-                        <div style="vertical-align: middle; text-align: center;">
-                            <input type="text" class="form-control" placeholder="1000">
-                        </div>
-                    </div>
-                    <div class="col-sm-1">
-                        <div style="text-align: center;">Từ ngày</div>
-                        <div style="vertical-align: middle; text-align: center;">
-                            <input type="text" class="form-control" placeholder="05/10/2019">
-                        </div>
-                    </div>
-                    <div class="col-sm-1">
-                        <div style="text-align: center;">Đến ngày</div>
-                        <div style="vertical-align: middle; text-align: center;">
-                            <input type="text" class="form-control" placeholder="05/11/2019">
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-sm-2">
-                        <div style="text-align: center;">Phòng ban</div>
-                        <div style="vertical-align: middle; text-align: center;" class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Bộ phận sản xuất
-                            </a>
-
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Bộ phận marketing</a>
-                                <a class="dropdown-item" href="#">Bộ phận kinh doanh</a>
-                                <a class="dropdown-item" href="#">Bộ phận hành chính</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-1">
-                        <div style="text-align: center;">Vai trò</div>
-                        <div style="vertical-align: middle; text-align: center;" class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Vai trò
-                            </a>
-
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Nhân viên</a>
-                                <a class="dropdown-item" href="#">Bộ phận</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-sm-2">
-                        <div style="text-align: center;">Người thực hiện</div>
-                        <div style="vertical-align: middle; text-align: center;">
-                            <input type="text" class="form-control" placeholder="ANguyenVan@congty.com">
-                        </div>
-                    </div>
-                    <div class="col-sm-2" style="position: relative;">
-                        <button class="btn btn-primary" style="position: absolute; bottom: 0; float: right;">Xem
-                            danh
-                            sách</button>
-                        <button class="btn btn-light" style="position: absolute; bottom: 0; margin-left: 9rem;">
-                            <i class="fa fa-pencil"></i>
-                            Thêm KPI
-                        </button>
-                    </div>
-
-                </div>
-                <div class="row filter" style="font-size: 1.5rem; padding-top: 2rem; font-weight: bold;">
-                    Thống kê danh sách KPI bộ phận sản xuất
-                </div>
-                <table class="table">
-                    <thead>
-                        <tr style="text-align: center;">
-                            <th scope="col">Tên KPI</th>
-                            <th scope="col">Loại KPI</th>
-                            <th scope="col">Thời gian bắt đầu</th>
-                            <th scope="col">Thời gian kết thúc</th>
-                            <th scope="col">Bộ phận</th>
-                            <th scope="col">Mô tả</th>
-                            <th scope="col">Hành động</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="font-size: 15px; margin-bottom: auto">
-                            <th id="name" scope="row">Xây dựng thẻ khách hàng</th>
-                            <td id="priority">Tháng</td>
-                            <td id="emp">05/10/2019</td>
-                            <td id="monitor">05/11/2019</td>
-                            <td id="start">Bộ phận sản xuất</td>
-                            <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
-                            <td id="detail">
-                                <a href="chitietkpi.html"> <button class="btn btn-primary">Xem chi tiết</button>
-                                </a>
-                                <button class="btn btn-danger">Xóa</button>
-                            </td>
-                        </tr>
-                        <tr style="font-size: 15px; margin-bottom: auto">
-                            <th id="name" scope="row">Xây dựng thẻ khách hàng</th>
-                            <td id="priority">Tháng</td>
-                            <td id="emp">05/10/2019</td>
-                            <td id="monitor">05/11/2019</td>
-                            <td id="start">Bộ phận sản xuất</td>
-                            <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
-                            <td id="detail">
-                                <a href="chitietkpi.html"> <button class="btn btn-primary">Xem chi tiết</button>
-                                </a>
-                                <button class="btn btn-danger">Xóa</button>
-                            </td>
-                        </tr>
-                        <tr style="font-size: 15px; margin-bottom: auto">
-                            <th id="name" scope="row">Xây dựng thẻ khách hàng</th>
-                            <td id="priority">Tháng</td>
-                            <td id="emp">05/10/2019</td>
-                            <td id="monitor">05/11/2019</td>
-                            <td id="start">Bộ phận sản xuất</td>
-                            <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
-                            <td id="detail">
-                                <a href="chitietkpi.html"> <button class="btn btn-primary">Xem chi tiết</button>
-                                </a>
-                                <button class="btn btn-danger">Xóa</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div> -->
         
     </div>
 
     <!--   Core   -->
-  <script src="./assets/js/plugins/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <!--   Optional JS   -->
-  <script src="./assets/js/plugins/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
-  <!--   Argon JS   -->
-  <script src="./assets/js/argon-dashboard.min.js?v=1.1.0"></script>
-  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script src="../assets/js/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!--   Optional JS   -->
+    <script src="../assets/js/plugins/chart.js/dist/Chart.min.js"></script>
+    <script src="../assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
+    <!--   Argon JS   -->
+    <script src="../assets/js/argon-dashboard.min.js?v=1.1.0"></script>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
   <script>
     window.TrackJS &&
       TrackJS.install({
