@@ -2001,7 +2001,7 @@ pre code {
   padding: 0.625rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  color:#575e65;
+  color: #8898aa;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #cad1d7;
@@ -15598,8 +15598,8 @@ a.btn-icon-only {
 
 @media (min-width: 768px) {
   .main-content .container-fluid {
-    padding-left: 18px !important;
-    padding-right: 18px !important;
+    padding-left: 39px !important;
+    padding-right: 39px !important;
   }
 }
 
@@ -15859,7 +15859,7 @@ a.btn-icon-only {
 }
 
 .footer {
-  background: #f4f5fb;
+  background: #f7fafc;
   padding: 2.5rem 0;
 }
 
