@@ -135,7 +135,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  active " href="#">
+            <a class="nav-link  active " href="../marketing/report2.html">
               <i class="nav-icon fas fa-copy"></i> Báo cáo công việc
             </a>
           </li>
@@ -216,133 +216,101 @@
               <div class="card-header bg-white border-0">
                 <div class="row align-items-center">
                   <div class="col-12">
-                    <h2 style="text-align: center;">Danh sách báo cáo</h2>
-                    <div class="text-left">
-                        <a href="./addReport2.html">
-                          <button class="btn btn-icon btn-3 btn-primary" type="button">
-                            <span class="btn-inner--icon"><i class="ni ni-fat-add"></i></span>
-                            <span class="btn-inner--text">Tạo báo cáo</span>          
-                          </button>
-                        </a>
-                      </div>
+                    <h2 style="text-align: center;">Chỉnh sửa báo cáo</h2>
                   </div>
                 </div>
               </div>
-              <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table align-items-center table-flush">
-                      <thead class="thead-light">
-                        <tr>
-                          <th scope="col">STT</th>
-                          <th scope="col">Tên báo cáo</th>
-                          <th scope="col">Ngày báo cáo</th>
-                          <th scope="col">Người đánh giá</th>
-                          <th scope="col">Người thực hiện</th>
-                          <th scope="col">Bộ phận</th>
-                          <th scope="col">Xem chi tiết</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">
-                            <div class="media align-items-center">
-                              <div class="media-body">
-                                <span class="mb-0 text-sm">1</span>
-                              </div>
+            <div class="card-body">
+                <form>
+                    <h6 class="heading-small text-muted mb-4">Thông tin</h6>
+                    <div class="pl-lg-4">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-username">Tên báo cáo</label>
+                            <input type="text" id="input-username" class="form-control form-control-alternative" value="Báo cáo KPI" >
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="form-control-label" for="input-username">Bộ phận</label>
+                              <input type="text" id="input-username" class="form-control form-control-alternative" value="Bộ phận Marketing" >
                             </div>
-                          </th>
-                          <td>
-                             Báo cáo đánh giá KPI
-                          </td>
-                          <td>
-                              20/11/2019
-                          </td>
-                          <td>
-                            <span class="badge badge-dot mr-4">
-                              <i class="bg-warning"></i> Nguyễn Thị Mỹ Hằng
-                            </span>
-                          </td>
-                          <td>
-                            Phan Anh Tú
-                          </td>
-                          <td>
-                            Bộ phận chiến lược marketing
-                          </td>
-                          <td>
-                            <button type="button" class="btn btn-primary">
-                                <a style="color: aliceblue;" href="./detailsReport2.html">Chi tiết</a>
-                            </button>
-                            
-                          </td>
-                        </tr> 
-                        <tr>
-                            <th scope="row">
-                                <div class="media align-items-center">
-                                <div class="media-body">
-                                    <span class="mb-0 text-sm">2</span>
-                                </div>
-                                </div>
-                            </th>
-                            <td>
-                                Báo cáo đánh giá sản phẩm
-                            </td>
-                            <td>
-                                23/11/2019
-                            </td>
-                            <td>
-                                <span class="badge badge-dot mr-4">
-                                <i class="bg-warning"></i> Nguyễn Thị Kim
-                                </span>
-                            </td>
-                            <td>
-                                Phạm Anh Tuấn
-                            </td>
-                            <td>
-                                Bộ phận chiến lược sản xuất
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-primary">
-                                    <a style="color: aliceblue;" href="./detailsReport2.html">Chi tiết</a>
-                                </button>
-                                
-                            </td>
-                            </tr>   
-                            <tr>
-                                <th scope="row">
-                                    <div class="media align-items-center">
-                                    <div class="media-body">
-                                        <span class="mb-0 text-sm">3</span>
-                                    </div>
-                                    </div>
-                                </th>
-                                <td>
-                                    Báo cáo mới
-                                </td>
-                                <td>
-                                    10/11/2019
-                                </td>
-                                <td>
-                                    <span class="badge badge-dot mr-4">
-                                    <i class="bg-warning"></i> Nguyễn Vân Mỹ 
-                                    </span>
-                                </td>
-                                <td>
-                                   Bùi Văn Lâm
-                                </td>
-                                <td>
-                                    Bộ phận marketing
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-primary">
-                                        <a style="color: aliceblue;" href="./detailsReport2.html">Chi tiết</a>
-                                    </button>
-                                    
-                                </td>
-                                </tr>      
-                                                 
-                      </tbody>
-                    </table>
-          </div>
+                          </div>
+                    </div>
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="form-control-label" for="input-email">Người thực hiện</label>
+                              <input type="email" id="input-email" class="form-control form-control-alternative" value="Phan Anh Tú">
+                            </div>
+                          </div>
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-first-name">Mã số người thực hiện</label>
+                            <input type="text" id="input-first-name" class="form-control form-control-alternative" value="cntt1" >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="form-control-label" for="input-email">Người duyệt</label>
+                              <input type="email" id="input-email" class="form-control form-control-alternative" value="Mỹ Duyên">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-first-name">Mã số người duyệt</label>
+                            <input type="text" id="input-first-name" class="form-control form-control-alternative" value="tp1" >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-first-name">Ngày báo cáo</label>
+                            <input class="form-control datepicker" value="Select date" type="datetime-local" value="2019-11-11T13:45:00">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-last-name">Mức độ hoàn thành</label>
+                            <input class="form-control datepicker" value="85%" type="text" >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-4" />
+                    <!-- Address -->
+                    <h6 class="heading-small text-muted mb-4">Mô tả báo cáo</h6>
+                    <div class="pl-lg-4">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-email">Chi tiết công việc</label>
+                        <textarea rows="4" class="form-control form-control-alternative">Báo cáo thực hiện tiến hành ...</textarea>
+                      </div>
+                    </div>
+                    <div class="pl-lg-4">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-email"><a href="https://drive.google.com/open?id=1-95RvNinhqhoD-3SoOw8NGhW2nJJYCPv" target="_blank">File đính kèm</a></label>
+                      </div>
+                    </div>
+                    <hr class="my-4" />
+                    <!-- Description -->
+                    <h6 class="heading-small text-muted mb-4">Phản hồi sau hoàn thành</h6>
+                    <div class="pl-lg-4">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-email">Nội dung</label>
+                        <textarea rows="4" class="form-control form-control-alternative" >Chưa hoàn thành tốt như mong đợi</textarea>
+                      </div>
+                      <div class=" text-center">
+                            <button type="button" class="btn btn-danger" id="Cancel">Hủy</button>
+                            <button type="button" class="btn btn-primary" id="addReport2">Lưu</button>
+                          </div>
+                      </div>
+                    </div>
+                  </form>
+            </div>
         </div>
       <!-- Footer -->
       <footer class="footer">
@@ -388,12 +356,13 @@
       });
   </script>
   <script>
-    $( "#request" ).click(function() {
-      if (window.confirm('Gửi yêu cầu duyệt cho người giao việc?')) {
-        // document.getElementById("request").innerHTML = "Đang chờ duyệt";
-        $("#pending").css("display", "inline");
-        $("#request").css("display", "none");
-      }
+    $( "#addReport2" ).click(function() {
+      if (window.confirm('Bạn có muốn lưu báo cáo?')) {
+        window.location = "./report2.html";}
+    });
+    $( "#Cancel" ).click(function() {
+      if (window.confirm('Bạn có muốn hủy những thay đổi trên?')) {
+        window.location = "./detailsReport2.html";}
     });
   </script>
 </body>
