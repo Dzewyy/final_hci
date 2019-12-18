@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36404bfb-0a3d-4956-a202-a9c74da04048" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2/kpi/danhsachKPI.html" beforeDir="false" afterPath="$PROJECT_DIR$/2/kpi/danhsachKPI.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2/kpi/danhsachKPI.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="386" column="78" selection-start-line="386" selection-start-column="78" selection-end-line="386" selection-end-column="78" />
+            <state relative-caret-position="240">
+              <caret line="429" column="26" lean-forward="true" selection-start-line="429" selection-start-column="26" selection-end-line="429" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -149,18 +148,18 @@
       <option name="presentableId" value="Default" />
       <updated>1576604577610</updated>
       <workItem from="1576604579198" duration="4579000" />
-      <workItem from="1576640839091" duration="480000" />
+      <workItem from="1576640839091" duration="654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5059000" />
+    <option name="totallyTimeSpent" value="5233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19969743" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19969743" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -178,7 +177,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="ConsoleMavenPlugin" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -222,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2/kpi/danhsachKPI.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="386" column="78" selection-start-line="386" selection-start-column="78" selection-end-line="386" selection-end-column="78" />
+        <state relative-caret-position="240">
+          <caret line="429" column="26" lean-forward="true" selection-start-line="429" selection-start-column="26" selection-end-line="429" selection-end-column="26" />
         </state>
       </provider>
     </entry>
