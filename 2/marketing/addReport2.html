@@ -115,7 +115,7 @@
         <!-- Form -->
         <form class="mt-4 mb-3 d-md-none">
           <div class="input-group input-group-rounded input-group-merge">
-            <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
+            <input required="required" type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
             <div class="input-group-prepend">
               <div class="input-group-text">
                 <span class="fa fa-search"></span>
@@ -234,20 +234,20 @@
                 </div>
               </div>
             <div class="card-body">
-                <form>
+                <form id="forminput">
                     <h6 class="heading-small text-muted mb-4">Thông tin</h6>
                     <div class="pl-lg-4">
                       <div class="row">
                         <div class="col-lg-6">
                           <div class="form-group">
                             <label class="form-control-label" for="input-username">Tên báo cáo</label>
-                            <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Tên công việc" >
+                            <input required="required" type="text" id="input-username" class="form-control form-control-alternative" placeholder="Tên công việc" >
                           </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                               <label class="form-control-label" for="input-username">Bộ phận</label>
-                              <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Tên bộ phận" >
+                              <input required="required" type="text" id="input-username" class="form-control form-control-alternative" placeholder="Tên bộ phận" >
                             </div>
                           </div>
                     </div>
@@ -255,13 +255,13 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                               <label class="form-control-label" for="input-email">Người thực hiện</label>
-                              <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="Nhập tên người thực hiện">
+                              <input required="required" type="email" id="input-email" class="form-control form-control-alternative" placeholder="Nhập tên người thực hiện">
                             </div>
                           </div>
                         <div class="col-lg-6">
                           <div class="form-group">
                             <label class="form-control-label" for="input-first-name">Mã số người thực hiện</label>
-                            <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="Nhập mã số" >
+                            <input required="required" type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="Nhập mã số" >
                           </div>
                         </div>
                       </div>
@@ -269,13 +269,13 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                               <label class="form-control-label" for="input-email">Người duyệt</label>
-                              <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="Nhập tên người duyệt">
+                              <input required="required" type="email" id="input-email" class="form-control form-control-alternative" placeholder="Nhập tên người duyệt">
                             </div>
                         </div>
                         <div class="col-lg-6">
                           <div class="form-group">
                             <label class="form-control-label" for="input-first-name">Mã số người duyệt</label>
-                            <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="Nhập mã số" >
+                            <input required="required" type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="Nhập mã số" >
                           </div>
                         </div>
                       </div>
@@ -283,13 +283,13 @@
                         <div class="col-lg-6">
                           <div class="form-group">
                             <label class="form-control-label" for="input-first-name">Ngày báo cáo</label>
-                            <input class="form-control datepicker" placeholder="Select date" type="datetime-local" value="2019-11-11T13:45:00">
+                            <input required="required" class="form-control datepicker" placeholder="Select date" type="datetime-local" value="2019-11-11T13:45:00">
                             </div>
                         </div>
                         <div class="col-lg-6">
                           <div class="form-group">
                             <label class="form-control-label" for="input-last-name">Mức độ hoàn thành</label>
-                            <input class="form-control datepicker" placeholder="Nhập %" type="text" >
+                            <input required="required" class="form-control datepicker" placeholder="Nhập %" type="text" >
                           </div>
                         </div>
                       </div>
@@ -317,10 +317,10 @@
                         <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ..."></textarea>
                       </div>
                       <div class="text-center">
-                        <button type="button" class="btn btn-success" id="addReport2">Xong</button>
+                        <button type="submit" class="btn btn-success" id="addReport2">Xong</button>
                       </div>
                     </div>
-                  </form>
+                  </form id="forminput">
             </div>
         </div>
       <!-- Footer -->
@@ -367,10 +367,15 @@
       });
   </script>
   <script>
-    $( "#addReport2" ).click(function() {
-      if (window.confirm('Bạn có muốn lưu báo cáo?')) {
-        window.location = "./report2.html";}
-    });
+    $(document).ready(function(){
+        $("#forminput").validate({
+        })
+        if($("#forminput").valid()) {
+          $( "#addReport2" ).click(function() {
+          if (window.confirm('Bạn có muốn lưu báo cáo?')) {
+            window.location = "./report2.html";}
+    });}
+    })
   </script>
 </body>
 
