@@ -231,7 +231,7 @@
                         <div class="row align-items-center"> 
                                 <div class="col-5">
                                         <div class="text-left">
-                                            <a href="danhsachKPI.html">
+                                            <a href="chitietKPL.html">
                                             <button class="btn btn-icon btn-3 btn-primary" type="button">
                                                 <span class="btn-inner--icon"><i class="fa fa-undo"></i></span>
                                                 <span class="btn-inner--text">Quay lại</span>          
@@ -252,7 +252,7 @@
                                                 <label>Tên KPI</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <input readonly type="text" name="taansuat" id="inputtaansuat"
+                                                <input type="text" name="taansuat" id="inputtaansuat"
                                                     class="form-control" required="required" value="Xây dựng tập khách hàng">
                                             </div>
                                         </div>
@@ -261,7 +261,7 @@
                                                 <label>Phòng ban</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <select aria-readonly="readonly" name="status" class="form-control">
+                                                <select name="status" class="form-control">
                                                     <option value="true"> Bộ phận Marketing</option>
                                                     <option value="false">Bộ phận sản xuất</option>
                                                     <option value="false">Bộ phận kế toán</option>
@@ -275,7 +275,7 @@
                                                 <label>Nhân viên</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <input readonly type="text" name="taansuat" id="inputtaansuat"
+                                                <input type="text" name="taansuat" id="inputtaansuat"
                                                     class="form-control" required="required" value="ANguyenVan@congty.com">
                                             </div>
                                         </div>
@@ -284,7 +284,7 @@
                                                 <label>Giám sát</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <input readonly type="text" name="taansuat" id="inputtaansuat"
+                                                <input type="text" name="taansuat" id="inputtaansuat"
                                                     class="form-control" required="required" value="CNguyenThi@congty.com">
                                             </div>
                                         </div>
@@ -293,7 +293,7 @@
                                                 <label>Mục tiêu</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <input readonly type="text" name="taansuat" id="inputtaansuat"
+                                                <input type="text" name="taansuat" id="inputtaansuat"
                                                     class="form-control" required="required" value="Tập khách hàng đạt 50.00">
                                             </div>
                                         </div>
@@ -302,7 +302,7 @@
                                                 <label>Nhóm mục tiêu</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <input readonly type="text" name="taansuat" id="inputtaansuat"
+                                                <input type="text" name="taansuat" id="inputtaansuat"
                                                     class="form-control" required="required" value="Marleting">
                                             </div>
                                         </div>
@@ -311,7 +311,7 @@
                                                 <label>Trọng số</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <input readonly type="text" name="taansuat" id="inputtaansuat"
+                                                <input type="text" name="taansuat" id="inputtaansuat"
                                                     class="form-control" required="required" value="60">
                                             </div>
                                         </div>
@@ -320,7 +320,7 @@
                                                 <label>Ngày bắt đầu</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <input readonly class="form-control" type="datetime-local"
+                                                <input class="form-control" type="datetime-local"
                                                     value="2019-12-19T13:45:00" id="example-datetime-local-input">
                                             </div>
                                         </div>
@@ -329,7 +329,7 @@
                                                 <label>Ngày kết thúc</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <input readonly class="form-control" type="datetime-local"
+                                                <input class="form-control" type="datetime-local"
                                                     value="2019-12-21T13:45:00" id="example-datetime-local-input">
                                             </div>
                                         </div>
@@ -338,7 +338,7 @@
                                                 <label>Phương pháp đo</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <input readonly type="text" name="taansuat" id="inputtaansuat"
+                                                <input type="text" name="taansuat" id="inputtaansuat"
                                                     class="form-control" required="required" value="Số lượng thông tin khách h">
                                             </div>
                                         </div>
@@ -347,14 +347,12 @@
                                                 <label>Mô tả</label>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <textarea readonly class="form-control" rows="5" id="comment">Xây dựng tập thông tin khách hàng đã xem, mua hoặc quan tâm tới sản phẩm của công ty</textarea>
+                                                <textarea class="form-control" rows="5" id="comment">Xây dựng tập thông tin khách hàng đã xem, mua hoặc quan tâm tới sản phẩm của công ty</textarea>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-5 offset-md-7 ">
-                                                    <a href="editKPI.html">
-                                                <button id="Save" class="btn btn-danger"> Chỉnh sửa</button>
-                                                </a>
+                                            <div class="col-md-4 offset-md-8 ">
+                                                <button id="Save" class="btn btn-primary"> Lưu</button>
                                             </div>
                                         </div>
 
@@ -370,7 +368,7 @@
                                                         <label> Tần suất</label>
                                                     </div>
                                                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                                                        <input  type="text" name="taansuat" id="inputtaansuat"
+                                                        <input type="text" name="taansuat" id="inputtaansuat"
                                                             class="form-control" required="required" value="hàng tháng">
                                                     </div>
                                                 </div>
@@ -516,6 +514,12 @@
         token: "ee6fab19c5a04ac1a32a645abde4613a",
         application: "argon-dashboard-free"
       });
+  </script>
+  <script>
+    $( "#Save" ).click(function() {
+      if (window.confirm('Bạn có muốn lưu KPI?')) {
+        window.location = "./danhsachKPI.html";}
+    });
   </script>
 </body>
 
